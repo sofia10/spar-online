@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #bbb;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Group_1501" data-name="Group 1501" transform="translate(-1238 -410)">
+    <rect id="Rectangle_556" data-name="Rectangle 556" class="cls-1" width="22" height="22" rx="11" transform="translate(1238 410)"/>
+    <path id="search_4_" data-name="search (4)" class="cls-2" d="M12.393,10.93,9.537,7.96A4.843,4.843,0,1,0,5.829,9.69,4.793,4.793,0,0,0,8.6,8.813l2.878,2.993a.632.632,0,1,0,.911-.876ZM5.829,1.264A3.581,3.581,0,1,1,2.248,4.845,3.585,3.585,0,0,1,5.829,1.264Z" transform="translate(1242.627 415)"/>
+  </g>
+</svg>

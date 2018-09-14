@@ -1,0 +1,67 @@
+
+@font-face {
+  font-family: "BPGDejaVuSans";
+  src: url("../fonts/fonts/BPGDejaVuSans.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/fonts/BPGDejaVuSans.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/fonts/BPGDejaVuSans.otf") format("opentype"), /* Open Type Font */
+  url("../fonts/fonts/BPGDejaVuSans.svg") format("svg"), /* Legacy iOS */
+  url("../fonts/fonts/BPGDejaVuSans.ttf") format("truetype"), /* Safari, Android, iOS */
+  url("../fonts/fonts/BPGDejaVuSans.woff") format("woff"), /* Modern Browsers */
+  url("../fonts/fonts/BPGDejaVuSans.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BPGDejaVuSans-bold";
+  src: url("../fonts/fonts/BPGDejaVuSans-Bold.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/fonts/BPGDejaVuSans-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/fonts/BPGDejaVuSans-Bold.otf") format("opentype"), /* Open Type Font */
+  url("../fonts/fonts/BPGDejaVuSans-Bold.svg") format("svg"), /* Legacy iOS */
+  url("../fonts/fonts/BPGDejaVuSans-Bold.ttf") format("truetype"), /* Safari, Android, iOS */
+  url("../fonts/fonts/BPGDejaVuSans-Bold.woff") format("woff"), /* Modern Browsers */
+  url("../fonts/fonts/BPGDejaVuSans-Bold.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'BPG Phone Sans';
+  src: url('../fonts/fonts/BPGPhoneSans-Bold.eot');
+  src: url('../fonts/fonts/BPGPhoneSans-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/fonts/BPGPhoneSans-Bold.woff2') format('woff2'),
+  url('../fonts/fonts/BPGPhoneSans-Bold.woff') format('woff'),
+  url('../fonts/fonts/BPGPhoneSans-Bold.ttf') format('truetype'),
+  url('../fonts/fonts/BPGPhoneSans-Bold.svg') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BPG Nino Mtavruli';
+  src: url('../fonts/fonts/bpg-nino-mtavruli-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/fonts/bpg-nino-mtavruli-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/fonts/bpg-nino-mtavruli-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/fonts/bpg-nino-mtavruli-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+  url('../fonts/fonts/bpg-nino-mtavruli-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/fonts/bpg-nino-mtavruli-webfont.svg#bpg_nino_mtavruliregular') format('svg'); /* Legacy iOS */
+}
+
+
+@font-face {
+  font-family: 'BPG Nino Mtavruli Bold';
+  src: url('../fonts/fonts/bpg-nino-mtavruli-bold-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/fonts/bpg-nino-mtavruli-bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/fonts/bpg-nino-mtavruli-bold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/fonts/bpg-nino-mtavruli-bold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+  url('../fonts/fonts/bpg-nino-mtavruli-bold-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/fonts/bpg-nino-mtavruli-bold-webfont.svg#bpg_nino_mtavrulibold') format('svg'); /* Legacy iOS */
+}
+
+
+$primary-bold: 'BPGDejaVuSans-bold';
+$primary-font: 'BPGDejaVuSans';
+$caps-font: 'BPG Nino Mtavruli';
+$bold-font: 'BPG Nino Mtavruli Bold';
+$num-font: 'BPG Phone Sans';

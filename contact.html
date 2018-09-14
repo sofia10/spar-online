@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="google-site-verification" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="icon" href="images/fav.png" type="image/png" sizes="16x16">
+
+    <!--Plugins-->
+    <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+    <link href="plugins/bootstrap-4.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="plugins/animatecss/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="plugins/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="plugins/bootstrap-select/dist/css/bootstrap-select.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <!--Custom Css-->
+    <link href="styles/css/style-ka.css" rel="stylesheet">
+
+</head>
+<body class="site">
+
+    <header class="site__header home-header stuck about">
+        <div class="header">
+            <div class="sup-header">
+                <div class="bg-header"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7 col-md-4 col-5 d-flex align-items-center">
+                            <a href="index.html">
+                                <img src="images/logo@2x.png" class="logo" alt="">
+                            </a>
+                            <form class="location-block">
+                                <span class="your-loc">თქვენი უბანი:</span>
+                                <div>
+                                    <select name="" class="selectpicker location">
+                                        <option>აირჩიეთ უბანი</option>
+                                        <option>თბილისი, საბურთალო - შარტავას ქ. 38</option>
+                                        <option>აირჩიეთ უბანი</option>
+                                        <option>თბილისი, საბურთალო - შარტავას ქ. 38</option>
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-5 col-md-8 col-7 d-flex align-items-center justify-content-end">
+                            <a href="#!" class="map-btn">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </a>
+                            <a href="#!" class="map-btn" data-toggle="modal" data-target="#user-modal">
+                                <i class="fas fa-user"></i>
+                            </a>
+                            <a href="user_wishlist.html" target="_blank" class="map-btn">
+                                <i class="fas fa-heart"></i>
+                            </a>
+                            <a href="cart.html" target="_blank" class="shop-btn">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="shop-qty">0</span>
+                                <span class="shop-num">0.00 ₾</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-header">
+                <div class="container">
+                    <div class="header-menu justify-content-between align-items-center d-lg-flex d-none">
+                        <div class="d-flex sub-left">
+                            <div class="dropdown show product-dropdown">
+                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    პროდუქცია
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <div class="dropdown-item">
+                                        <a href="#!" class="dropdown-item_link">საკვები პროდუქტი</a>
+                                        <div class="inner-menu">
+                                            <div class="inner-menu-item d-flex alii justify-content-between">
+                                                <a href="products.html" class="inner-menu-link">ხორცეული</a>
+                                                <i class="fas fa-angle-right"></i>
+                                                <div class="inner-menu third-inner-menu">
+                                                    <div class="inner-menu-item d-flex alii justify-content-between">
+                                                        <a href="products.html" class="inner-menu-link">ხორცეული</a>
+                                                    </div>
+                                                    <div class="inner-menu-item d-flex alii justify-content-between">
+                                                        <a href="products.html" class="inner-menu-link">ბოსტნეული</a>
+                                                    </div>
+                                                    <div class="inner-menu-item d-flex alii justify-content-between">
+                                                        <a href="products.html" class="inner-menu-link">ბაკალეა</a>
+                                                    </div>
+                                                    <div class="inner-menu-item d-flex alii justify-content-between">
+                                                        <a href="products.html" class="inner-menu-link">კონსერვაცია</a>
+                                                    </div>
+                                                    <div class="inner-menu-item d-flex alii justify-content-between">
+                                                        <a href="products.html" class="inner-menu-link">ტკბილეული</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inner-menu-item d-flex alii justify-content-between">
+                                                <a href="products.html" class="inner-menu-link">ბოსტნეული</a>
+                                                <i class="fas fa-angle-right"></i>
+                                            </div>
+                                            <div class="inner-menu-item d-flex alii justify-content-between">
+                                                <a href="products.html" class="inner-menu-link">ბაკალეა</a>
+                                                <i class="fas fa-angle-right"></i>
+                                            </div>
+                                            <div class="inner-menu-item d-flex alii justify-content-between">
+                                                <a href="products.html" class="inner-menu-link">კონსერვაცია</a>
+                                                <i class="fas fa-angle-right"></i>
+                                            </div>
+                                            <div class="inner-menu-item d-flex alii justify-content-between">
+                                                <a href="products.html" class="inner-menu-link">ტკბილეული</a>
+                                                <i class="fas fa-angle-right"></i>
+                                            </div>
+                                            <div class="inner-menu-item d-flex alii justify-content-between">
+                                                <a href="products.html" class="inner-menu-link">კონსერვაცია</a>
+                                                <i class="fas fa-angle-right"></i>
+                                            </div>
+                                            <div class="inner-menu-item d-flex alii justify-content-between">
+                                                <a href="products.html" class="inner-menu-link">ტკბილეული</a>
+                                                <i class="fas fa-angle-right"></i>
+                                            </div>
+                                            <div class="inner-menu-item d-flex alii justify-content-between">
+                                                <a href="products.html" class="inner-menu-link">კონსერვაცია</a>
+                                                <i class="fas fa-angle-right"></i>
+                                            </div>
+                                            <div class="inner-menu-item d-flex alii justify-content-between">
+                                                <a href="products.html" class="inner-menu-link">ტკბილეული</a>
+                                                <i class="fas fa-angle-right"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <a href="products.html" class="dropdown-item_link">საყოფაცხოვრებო პროდუქცია</a>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <a href="products.html" class="dropdown-item_link">ჯანმრთელობა & სილამაზე</a>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <a href="products.html" class="dropdown-item_link">ცხოველებისთვის</a>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <a href="products.html" class="dropdown-item_link">ჭურჭელი</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <form action="" class="d-lg-flex d-none align-items-center">
+                                <input type="text" placeholder="ჩაწერე საძიებო სიტყვა" class="search-btn">
+                                <a href="" class="click-search"></a>
+                            </form>
+                        </div>
+                        <div class="language d-lg-flex d-none">
+                            <span class="lang active">ქარ</span>
+                            <a href="#!" class="lang">ENG</a>
+                        </div>
+                    </div>
+                    <div class="d-lg-none d-flex respo-nav align-items-center justify-content-between">
+                        <div class="burger-btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="burger-nav">
+                            <img src="images/cancel.svg" alt="" class="close-btn">
+                            <div class="language d-flex d-lg-none">
+                                <span class="lang active">ქარ</span>
+                                <a href="#!" class="lang">ENG</a>
+                            </div>
+                            <div class="burger-menu_products">
+                                <div class="dropdown show product-dropdown">
+                                    <button class="btn btn-secondary product-dropdown_btn">
+                                        პროდუქცია
+                                    </button>
+                                    <div class="dropdown-menu main-dropdown-menu">
+                                        <div class="dropdown-item">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <a href="#!" class="dropdown-item_link">საკვები პროდუქტი საკვები პროდუქტი საკვები პროდუქტი</a>
+                                                <i class="fa fa-angle-right"></i>
+                                            </div>
+                                            <div class="inner-menu">
+                                                <div class="back_tomenu d-flex align-items-center justify-content-center">
+                                                    <i class="fa fa-angle-left"></i>
+                                                    <a href="#!" class="dropdown-item_link">საკვები პროდუქტი საკვები პროდუქტი საკვები პროდუქტი საკვები პროდუქტი საკვები პროდუქტი</a>
+                                                </div>
+                                                <div class="inner-menu-item d-flex alii justify-content-between">
+                                                    <a href="https://www.google.com/" class="inner-menu-link">ხორცეული</a>
+                                                    <i class="fas fa-angle-right"></i>
+                                                    <div class="inner-menu third-inner-menu">
+                                                        <div class="back_tomenu d-flex align-items-center justify-content-center">
+                                                            <i class="fa fa-angle-left"></i>
+                                                            <a href="#!" class="dropdown-item_link">ხორცეული</a>
+                                                        </div>
+                                                        <div class="inner-menu-item d-flex alii justify-content-between">
+                                                            <a href="#!" class="inner-menu-link">ხორცეული</a>
+                                                        </div>
+                                                        <div class="inner-menu-item d-flex alii justify-content-between">
+                                                            <a href="#!" class="inner-menu-link">ბოსტნეული</a>
+                                                        </div>
+                                                        <div class="inner-menu-item d-flex alii justify-content-between">
+                                                            <a href="#!" class="inner-menu-link">ბაკალეა</a>
+                                                        </div>
+                                                        <div class="inner-menu-item d-flex alii justify-content-between">
+                                                            <a href="https://www.google.com/" class="inner-menu-link">კონსერვაცია</a>
+                                                        </div>
+                                                        <div class="inner-menu-item d-flex alii justify-content-between">
+                                                            <a href="#!" class="inner-menu-link">ტკბილეული</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="inner-menu-item d-flex alii justify-content-between">
+                                                    <a href="#!" class="inner-menu-link">ბოსტნეული</a>
+                                                    <i class="fas fa-angle-right"></i>
+                                                </div>
+                                                <div class="inner-menu-item d-flex alii justify-content-between">
+                                                    <a href="#!" class="inner-menu-link">ბაკალეა ბაკალეა ბაკალეა ბაკალეა ბაკალეა ბაკალეა</a>
+                                                    <i class="fas fa-angle-right"></i>
+                                                </div>
+                                                <div class="inner-menu-item d-flex alii justify-content-between">
+                                                    <a href="#!" class="inner-menu-link">კონსერვაცია</a>
+                                                    <i class="fas fa-angle-right"></i>
+                                                </div>
+                                                <div class="inner-menu-item d-flex alii justify-content-between">
+                                                    <a href="#!" class="inner-menu-link">ტკბილეული</a>
+                                                    <i class="fas fa-angle-right"></i>
+                                                </div>
+                                                <div class="inner-menu-item d-flex alii justify-content-between">
+                                                    <a href="#!" class="inner-menu-link">კონსერვაცია</a>
+                                                    <i class="fas fa-angle-right"></i>
+                                                    <div class="inner-menu third-inner-menu">
+                                                        <div class="back_tomenu d-flex align-items-center justify-content-center">
+                                                            <i class="fa fa-angle-left"></i>
+                                                            <a href="#!" class="dropdown-item_link">კონსერვაცია</a>
+                                                        </div>
+                                                        <div class="inner-menu-item d-flex alii justify-content-between">
+                                                            <a href="#!" class="inner-menu-link">კონსერვაცია</a>
+                                                        </div>
+                                                        <div class="inner-menu-item d-flex alii justify-content-between">
+                                                            <a href="#!" class="inner-menu-link">კონსერვაცია</a>
+                                                        </div>
+                                                        <div class="inner-menu-item d-flex alii justify-content-between">
+                                                            <a href="#!" class="inner-menu-link">კონსერვაცია</a>
+                                                        </div>
+                                                        <div class="inner-menu-item d-flex alii justify-content-between">
+                                                            <a href="https://www.google.com/" class="inner-menu-link">კონსერვაცია</a>
+                                                        </div>
+                                                        <div class="inner-menu-item d-flex alii justify-content-between">
+                                                            <a href="#!" class="inner-menu-link">კონსერვაცია</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="inner-menu-item d-flex alii justify-content-between">
+                                                    <a href="#!" class="inner-menu-link">ტკბილეული</a>
+                                                    <i class="fas fa-angle-right"></i>
+                                                </div>
+                                                <div class="inner-menu-item d-flex alii justify-content-between">
+                                                    <a href="#!" class="inner-menu-link">კონსერვაცია</a>
+                                                    <i class="fas fa-angle-right"></i>
+                                                </div>
+                                                <div class="inner-menu-item d-flex alii justify-content-between">
+                                                    <a href="#!" class="inner-menu-link">ტკბილეული</a>
+                                                    <i class="fas fa-angle-right"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-item">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <a href="#!" class="dropdown-item_link">საყოფაცხოვრებო პროდუქცია</a>
+                                                <i class="fa fa-angle-right"></i>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-item">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <a href="#!" class="dropdown-item_link">ჯანმრთელობა & სილამაზე</a>
+                                                <i class="fa fa-angle-right"></i>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-item">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <a href="#!" class="dropdown-item_link">ცხოველებისთვის</a>
+                                                <i class="fa fa-angle-right"></i>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-item">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <a href="#!" class="dropdown-item_link">ჭურჭელი</a>
+                                                <i class="fa fa-angle-right"></i>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-item">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <a href="#!" class="dropdown-item_link">ცხოველებისთვის</a>
+                                                <i class="fa fa-angle-right"></i>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-item">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <a href="#!" class="dropdown-item_link">ჭურჭელი</a>
+                                                <i class="fa fa-angle-right"></i>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-item">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <a href="#!" class="dropdown-item_link">ცხოველებისთვის</a>
+                                                <i class="fa fa-angle-right"></i>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-item">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <a href="#!" class="dropdown-item_link">ჭურჭელი</a>
+                                                <i class="fa fa-angle-right"></i>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-item">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <a href="#!" class="dropdown-item_link">ცხოველებისთვის</a>
+                                                <i class="fa fa-angle-right"></i>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-item">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <a href="#!" class="dropdown-item_link">ჭურჭელი</a>
+                                                <i class="fa fa-angle-right"></i>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-item">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <a href="#!" class="dropdown-item_link">ცხოველებისთვის</a>
+                                                <i class="fa fa-angle-right"></i>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-item">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <a href="#!" class="dropdown-item_link">ჭურჭელი</a>
+                                                <i class="fa fa-angle-right"></i>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-item">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <a href="#!" class="dropdown-item_link">ცხოველებისთვის</a>
+                                                <i class="fa fa-angle-right"></i>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-item">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <a href="#!" class="dropdown-item_link">ჭურჭელი</a>
+                                                <i class="fa fa-angle-right"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="burger-bg"></div>
+                        <form action="" class="d-lg-none d-flex align-items-center">
+                            <input type="text" placeholder="ჩაწერე საძიებო სიტყვა" class="search-btn">
+                            <a href="" class="click-search"></a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="site__content">
+        <div class="content">
+            <div class="main-title about">
+                <div class="bg-slide"></div>
+                <div class="main-title-block">
+                    <div class="container d-flex flex-md-row flex-column justify-content-md-between justify-content-center align-items-center">
+                        <div class="d-flex align-items-center align-items-md-start flex-column">
+                            <h1 class="page-title">კონტაქტი</h1>
+                            <div class="page-menu d-md-block d-none">
+                                <a href="index.html" target="_blank" class="page-menu-link">მთავარი</a>
+                                <i class="fas fa-angle-right"></i>
+                                <span class="page-menu-link">კონტაქტი</span>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <button class="cont-btn find active">სად გვიპოვნოთ?</button>
+                            <button class="cont-btn branches">ფილიალები</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-cont">
+                <div class="about-content">
+                    <div class="contact-block find-block">
+                        <div id="map1"></div>
+                        <div class="cont-section">
+                            <div class="container">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <div class="d-flex flex-md-row justify-content-around flex-column inner-cont">
+                                        <div class="cont-section_item d-flex align-items-center">
+                                            <div class="icon">
+                                                <i class="fas fa-phone"></i>
+                                            </div>
+                                            <span>2 300 400</span>
+                                        </div>
+                                        <div class="cont-section_item d-flex align-items-center">
+                                            <div class="icon">
+                                                <i class="far fa-envelope"></i>
+                                            </div>
+                                            <span>Info@sparonline.ge</span>
+                                        </div>
+                                        <div class="cont-section_item d-flex align-items-center">
+                                            <div class="icon">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                            </div>
+                                            <span>თბილისი, საბურთალო, გოთუას N8</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="find-contact_form">
+                                <form action="">
+                                    <h3>დაგვიკავშირდით</h3>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="input-effect">
+                                                <input class="effect-16" type="text" placeholder="">
+                                                <label>სახელი</label>
+                                                <span class="focus-border"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="input-effect">
+                                                <input class="effect-16" type="text" placeholder="">
+                                                <label>გვარი</label>
+                                                <span class="focus-border"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="input-effect">
+                                                <input class="effect-16" type="text" placeholder="">
+                                                <label>ელ-ფოსტა</label>
+                                                <span class="focus-border"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="input-effect">
+                                                <input class="effect-16" type="text" placeholder="">
+                                                <label>ტელეფონის ნომერი</label>
+                                                <span class="focus-border"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 d-flex flex-column">
+                                            <div class="input-effect">
+                                                <textarea class="effect-16" id="txt" placeholder=""></textarea>
+                                                <label for="txt">ტექსტი</label>
+                                                <span class="focus-border"></span>
+                                            </div>
+                                        </div>
+                                        <input type="submit" value="გაგზავნა" class="send">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-block branches-block">
+                        <div id="map-branches"></div>
+                        <div class="cont-section">
+                            <div class="container">
+                                <form class="d-flex justify-content-center flex-wrap">
+                                    <div class="branches-select d-flex flex-column">
+                                        <span class="select-title">აირჩიე ქალაქი</span>
+                                        <select name="" class="selectpicker location">
+                                            <option>თბილისი</option>
+                                            <option>ქუთაისი</option>
+                                            <option>ბათუმი</option>
+                                            <option>თბილისი</option>
+                                        </select>
+                                    </div>
+                                    <div class="branches-select d-flex flex-column">
+                                        <span class="select-title">აირჩიე უბანი</span>
+                                        <select name="" class="selectpicker location">
+                                            <option>დიღომი</option>
+                                            <option>ვაკე</option>
+                                            <option>საბურთალო</option>
+                                        </select>
+                                    </div>
+                                    <input type="submit" value="ფილიალის ძებნა" class="search">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="find-contact_form">
+                                <div class="d-flex flex-column align-items-center justify-content-center">
+                                    <h3>თბილისი</h3>
+                                    <h4>დიღომი</h4>
+                                </div>
+                                <div class="row branches-section">
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="branche-item">
+                                            <div class="top-section d-flex align-items-center justify-content-between">
+                                                <img src="images/logo@2x.png" alt="">
+                                                <div class="time">
+                                                    <i class="fas fa-clock"></i>
+                                                    <span>12:00 - 22:00</span>
+                                                </div>
+                                            </div>
+                                            <div class="btm-section">
+                                                <div class="d-flex align-items-start branch-loc">
+                                                    <i class="fas fa-map-marker-alt"></i>
+                                                    <span>თბილისი, დიღომი, ბელიაშვილის N8</span>
+                                                </div>
+                                                <div class="d-flex align-items-start branch-loc">
+                                                    <i class="fas fa-phone"></i>
+                                                    <span>2 300 400</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="branche-item">
+                                            <div class="top-section d-flex align-items-center justify-content-between">
+                                                <img src="images/logo@2x.png" alt="">
+                                                <div class="time">
+                                                    <i class="fas fa-clock"></i>
+                                                    <span>12:00 - 22:00</span>
+                                                </div>
+                                            </div>
+                                            <div class="btm-section">
+                                                <div class="d-flex align-items-start branch-loc">
+                                                    <i class="fas fa-map-marker-alt"></i>
+                                                    <span>თბილისი, დიღომი, ბელიაშვილის N8</span>
+                                                </div>
+                                                <div class="d-flex align-items-start branch-loc">
+                                                    <i class="fas fa-phone"></i>
+                                                    <span>2 300 400</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="branche-item">
+                                            <div class="top-section d-flex align-items-center justify-content-between">
+                                                <img src="images/logo@2x.png" alt="">
+                                                <div class="time">
+                                                    <i class="fas fa-clock"></i>
+                                                    <span>12:00 - 22:00</span>
+                                                </div>
+                                            </div>
+                                            <div class="btm-section">
+                                                <div class="d-flex align-items-start branch-loc">
+                                                    <i class="fas fa-map-marker-alt"></i>
+                                                    <span>თბილისი, დიღომი, ბელიაშვილის N8</span>
+                                                </div>
+                                                <div class="d-flex align-items-start branch-loc">
+                                                    <i class="fas fa-phone"></i>
+                                                    <span>2 300 400</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--modal user-->
+            <div class="modal fade" id="user-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <div class="user-modal-block">
+                                <h5>ყიდვის გასაგრძელებლად გაიარეთ:</h5>
+                                <div class="d-flex justify-content-center popup-btns">
+                                    <a href="#!" class="popup-btn-link login-btn active">ავტორიზაცია</a>
+                                    <a href="#!" class="popup-btn-link reg-btn">რეგისტრაცია</a>
+                                </div>
+                                <form action="" class="login-modal active">
+                                    <div class="d-flex flex-column ">
+                                        <div class="d-flex flex-column form-inner">
+                                            <label for="mail">ელ.ფოსტა *</label>
+                                            <input type="email" id="mail">
+                                        </div>
+                                        <div class="d-flex flex-column form-inner">
+                                            <label for="password">პაროლი *</label>
+                                            <a href="#!" class="repair">შეხსენება</a>
+                                            <input type="password" id="password">
+                                        </div>
+                                        <input type="submit" value="შესვლა" class="submit">
+                                        <hr>
+                                        <span>ან გამოიყენეთ:</span>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <button class="fb-btn soc-btn">
+                                                შესვლა
+                                                <i class="fab fa-facebook-f"></i>
+                                            </button>
+                                            <button class="google-btn soc-btn">
+                                                შესვლა
+                                                <i class="fab fa-google-plus-g"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <form action="" class="reg-modal">
+                                    <div class="d-flex flex-column ">
+                                        <div class="d-flex flex-column form-inner">
+                                            <label for="name">სახელი *</label>
+                                            <input type="text" id="name">
+                                        </div>
+                                        <div class="d-flex flex-column form-inner">
+                                            <label for="mail1">ელ.ფოსტა *</label>
+                                            <input type="email" id="mail1">
+                                        </div>
+                                        <div class="d-flex flex-column form-inner">
+                                            <label for="password1">პაროლი *</label>
+                                            <a href="#!" class="repair">შეხსენება</a>
+                                            <input type="password" id="password1">
+                                        </div>
+                                        <input type="submit" value="რეგისტრაცია" class="submit">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site__footer">
+        <div class="footer">
+            <div class="sale-nav">
+                <div class="container d-flex align-items-center justify-content-md-between justify-content-center">
+                    <div class="sale-nav-title d-none d-md-block">გაიგე პირველმა ფასდაკლებების შესახებ</div>
+                    <form action="">
+                        <input type="email" placeholder="შეიყვანეთ ელ.ფოსტა">
+                        <input type="submit" value="">
+                    </form>
+                </div>
+            </div>
+            <div class="sup-footer">
+                <div class="container">
+                    <div class="sup-block row justify-content-between align-items-center">
+                        <a href="index.html" class="col-lg-2 align-items-center d-lg-flex d-none">
+                            <img src="images/logo-footer@2x.png" alt="" class="logo">
+                        </a>
+                        <div class="col-lg-3 align-items-center d-flex justify-content-lg-end justify-content-center">
+                            <a href="#!" data-aos="fade-up">
+                                <img src="images/android-f@2x.png" alt="" class="app-link">
+                            </a>
+                            <a href="#!" data-aos="fade-up">
+                                <img src="images/ios-f@2x.png" alt="" class="app-link">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row align-items-start justify-content-between footer-center-block">
+                        <div class="footer-menu col-lg-9 d-flex flex-wrap justify-content-md-start justify-content-center">
+                            <a href="about-us_news.html" class="footer-menu_link">სიახლეები</a>
+                            <a href="about-us.html" class="footer-menu_link">ჩვენ შესახებ</a>
+                            <a href="about-us_rules.html" class="footer-menu_link">წესები და პირობები</a>
+                            <a href="#!" class="footer-menu_link">მიტანის პირობები</a>
+                            <a href="#!" class="footer-menu_link">კონფიდენციალურობა</a>
+                            <a href="#!" class="footer-menu_link">კონტაქტი</a>
+                        </div>
+                        <div class="col-lg-3 social d-flex align-items-center justify-content-lg-end justify-content-center">
+                            <a href="#!" class="social-link">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#!" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#!" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#!" class="social-link">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#!" class="social-link">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-footer">
+                <div class="container d-flex flex-sm-row flex-column justify-content-between align-items-center">
+                    <span>© 2018 სპარი. ყველა უფლება დაცულია</span>
+                    <a href="http://mobility.ge/" target="_blank"><img src="images/mobility@2x.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--Plugins-->
+    <script src="plugins/jquery/jquery-3.3.1.min.js"></script>
+    <script src="plugins/bootstrap-4.0.0/assets/js/vendor/popper.min.js"></script>
+    <script src="plugins/bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
+    <script src="plugins/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="plugins/bootstrap-select/dist/js/bootstrap-select.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--Custom Scripts-->
+    <script src="minJs/default.min.js"></script>
+    <script src="minJs/contact.min.js"></script>
+
+
+    <script>
+        AOS.init({
+            duration: 1000,
+        })
+
+    </script>
+
+    <script>
+        var map1;
+        var map2;
+        var locations = [{lat: 41.73283, lng: 44.770535}, {lat: 41.73236, lng: 44.770533}, ];
+
+        function initMap() {
+            map1 = new google.maps.Map(document.getElementById('map1'), {
+                center: {lat: 41.73283, lng: 44.770535},
+                zoom: 15
+            });
+            var marker1=new google.maps.Marker({
+                position:{lat: 41.73283, lng: 44.770535},
+                icon:'images/marker.png'
+            });
+
+            marker1.setMap(map1);
+
+            map2 = new google.maps.Map(document.getElementById('map-branches'), {
+                center: {lat: 41.73283, lng: 44.770535},
+                zoom: 15
+            });
+
+
+            for (i = 0; i < locations.length; i++) {
+                marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(locations[i].lat, locations[i].lng),
+                    icon:'images/marker.png',
+                    map: map2
+                });
+
+                google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                    return function() {
+                        infowindow.setContent(locations[i][0]);
+                        infowindow.open(map2, marker);
+                    }
+                })(marker, i));
+            }
+
+
+        }
+
+
+    </script>
+
+
+<!--branches maps-->
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsoF1yBpQMNBQy8DpwIJkhFnYTJBTG2_Y&callback=initMap"
+            async defer>
+    </script>
+
+
+
+
+
+</body>
+</html>

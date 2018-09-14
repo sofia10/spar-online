@@ -1,0 +1,12 @@
+@import "../commons/default";
+@import "../fonts/scss/fonts-en";
+body{
+  font-size: 14px;
+  font-family: $primary-font;
+  background: $body-color;
+  color: $text;
+}
+
+.site__header{}
+.site__content{}
+.site__footer{}
