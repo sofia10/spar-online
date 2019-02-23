@@ -376,6 +376,13 @@
                         <div class="user-intitle d-flex">
                             <div class="image">
                                 <img src="uploads/images/user@2x.png" alt="">
+                                <div class="choose-photo" data-toggle="modal" data-target="#save">
+                                    <input type="file" class="hidden-inp">
+                                    <button class="upload-file">
+                                        <i class="fas fa-camera"></i>
+                                        არჩევა
+                                    </button>
+                                </div>
                             </div>
                             <div class="d-flex flex-column justify-content-center">
                                 <span>გამარჯობა, </span>
@@ -425,12 +432,6 @@
                                                 <div class="col-md-6 profile-form_item">
                                                     <label for="photo">ფოტოსურათი</label>
                                                     <input type="text" class="disabled" id="photo" placeholder="">
-                                                </div>
-                                                <div class="col-md-6 d-flex align-items-end">
-                                                    <input type="file" class="hidden-inp">
-                                                    <button class="upload-file">არჩევა
-                                                        <i class="fas fa-camera"></i>
-                                                    </button>
                                                 </div>
                                             </div>
                                             <div class="d-flex flex-sm-row flex-column justify-content-sm-between justify-content-center align-items-center">
@@ -538,6 +539,25 @@
         </div>
     </main>
 
+    <!-- Modal -->
+    <div class="modal save-modal fade" id="save" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">ცვლილებების შენახვა</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-btns d-flex justify-content-center align-items-center">
+                        <button type="button" class="save" data-dismiss="modal">შენახვა</button>
+                        <button type="button" class="cancel">გაუქმება</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer class="site__footer">
         <div class="footer">
             <div class="sale-nav">

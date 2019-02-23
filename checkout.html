@@ -425,57 +425,64 @@
                                     <a href="#!" class="checkout-btn-link reg-check">რეგისტრაცია</a>
                                 </div>
                                 <form action="" class="checkout-form active">
-                                    <div class="d-flex flex-column ">
-                                        <div class="d-flex flex-column form-inner error">
-                                            <label for="email">ელ.ფოსტა *</label>
-                                            <input type="email" id="email" placeholder="user@gmail.com">
-                                            <div class="error-sms">არასწორია</div>
-
-                                        </div>
-                                        <div class="d-flex flex-column form-inner">
-                                            <label for="pass">პაროლი *</label>
-                                            <a href="#!" class="repair">შეხსენება</a>
-                                            <input type="password" id="pass" placeholder="******">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <div class="inputs">
+                                            <div class="d-flex form-inner error">
+                                                <label for="email">ელ.ფოსტა *</label>
+                                                <input type="email" id="email" placeholder="user@gmail.com">
+                                                <div class="error-sms">არასწორია</div>
+                                            </div>
+                                            <div class="d-flex form-inner">
+                                                <label for="pass">პაროლი *</label>
+                                                <a href="#!" class="repair">შეხსენება</a>
+                                                <input type="password" id="pass" placeholder="******">
+                                            </div>
                                         </div>
                                         <input type="submit" value="შესვლა" class="submit">
                                         <hr>
                                         <span>ან გამოიყენეთ:</span>
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <button class="fb-btn soc-btn">
-                                                შესვლა
-                                                <i class="fab fa-facebook-f"></i>
+                                            <button type="button" onclick="window.location.href = 'https://sparonline.ge/login/facebook'" class="fb-btn soc-btn">
+                                                <div class="icon">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </div>
+                                                Facebook შესვლა
                                             </button>
-                                            <button class="google-btn soc-btn">
-                                                შესვლა
-                                                <i class="fab fa-google-plus-g"></i>
+                                            <button type="button" class="google-btn soc-btn" onclick="window.location.href = 'https://sparonline.ge/login/google'">
+                                                <div class="icon">
+                                                    <img src="https://sparonline.ge/assets/site/images/google@2x.png" alt="">
+                                                </div>
+                                                Google შესვლა
                                             </button>
                                         </div>
                                     </div>
                                 </form>
                                 <form action="" class="reg-form">
-                                    <div class="d-flex flex-column ">
-                                        <div class="d-flex flex-column form-inner error">
-                                            <label for="email1">ელ.ფოსტა *</label>
-                                            <input type="email" id="email1" placeholder="user@gmail.com">
-                                            <div class="error-sms">მომხმარებელი არსებობს</div>
-                                        </div>
-                                        <div class="d-flex flex-column form-inner error">
-                                            <label for="name1">სახელი *</label>
-                                            <input type="text" id="name1" placeholder="გიორგი">
-                                            <div class="error-sms">მომხმარებელი არსებობს</div>
-                                        </div>
-                                        <div class="d-flex flex-column form-inner">
-                                            <label for="name2">გვარი *</label>
-                                            <input type="text" id="name2" placeholder="ტარიელაშვილი">
-                                        </div>
-                                        <div class="d-flex flex-column form-inner">
-                                            <label for="num">ტელეფონი *</label>
-                                            <input type="text" id="num" placeholder="577 520 200">
-                                        </div>
-                                        <div class="d-flex flex-column form-inner">
-                                            <label for="myInput">პაროლი *</label>
-                                            <input type="password" id="myInput" placeholder="*****">
-                                            <div class="show" onclick="myFunction()">მაჩვენე</div>
+                                    <div class="d-flex flex-column align-items-center">
+                                        <div class="inputs">
+                                            <div class="d-flex form-inner error">
+                                                <label for="email1">ელ.ფოსტა *</label>
+                                                <input type="email" id="email1" placeholder="user@gmail.com">
+                                                <div class="error-sms">მომხმარებელი არსებობს</div>
+                                            </div>
+                                            <div class="d-flex form-inner error">
+                                                <label for="name1">სახელი *</label>
+                                                <input type="text" id="name1" placeholder="გიორგი">
+                                                <div class="error-sms">მომხმარებელი არსებობს</div>
+                                            </div>
+                                            <div class="d-flex form-inner">
+                                                <label for="name2">გვარი *</label>
+                                                <input type="text" id="name2" placeholder="ტარიელაშვილი">
+                                            </div>
+                                            <div class="d-flex form-inner">
+                                                <label for="num">ტელეფონი *</label>
+                                                <input type="text" id="num" placeholder="577 520 200">
+                                            </div>
+                                            <div class="d-flex form-inner">
+                                                <label for="myInput">პაროლი *</label>
+                                                <input type="password" id="myInput" placeholder="*****">
+                                                <div class="show" onclick="myFunction()">მაჩვენე</div>
+                                            </div>
                                         </div>
                                         <input type="submit" value="რეგისტრაცია" class="submit" data-toggle="modal" data-target=".verify">
                                         <div class="modal fade verify" tabindex="-1" role="dialog" aria-hidden="true">
@@ -507,13 +514,17 @@
                                         <hr>
                                         <span>ან გამოიყენეთ:</span>
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <button class="fb-btn soc-btn">
-                                                შესვლა
-                                                <i class="fab fa-facebook-f"></i>
+                                            <button type="button" onclick="window.location.href = 'https://sparonline.ge/login/facebook'" class="fb-btn soc-btn">
+                                                <div class="icon">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </div>
+                                                Facebook შესვლა
                                             </button>
-                                            <button class="google-btn soc-btn">
-                                                შესვლა
-                                                <i class="fab fa-google-plus-g"></i>
+                                            <button type="button" class="google-btn soc-btn" onclick="window.location.href = 'https://sparonline.ge/login/google'">
+                                                <div class="icon">
+                                                    <img src="https://sparonline.ge/assets/site/images/google@2x.png" alt="">
+                                                </div>
+                                                Google შესვლა
                                             </button>
                                         </div>
                                     </div>

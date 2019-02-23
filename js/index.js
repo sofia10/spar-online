@@ -11,6 +11,25 @@ var swiper = new Swiper('.s1', {
     },
 });
 
+var swiper = new Swiper('.chosen-slider', {
+    slidesPerView: 6,
+    spaceBetween: 10,
+    breakpoints: {
+        1199: {
+            slidesPerView: 5
+        },
+        991: {
+            slidesPerView: 4
+        },
+        767: {
+            slidesPerView: 3
+        },
+        480: {
+            slidesPerView: 2
+        },
+    }
+});
+
 
 // products quantity
 
@@ -86,9 +105,7 @@ $(function () {
                     slidesPerView: 2
                 }
             }
-
         });
-
     });
 });
 
@@ -114,9 +131,6 @@ $('.cart').click(function(){
     }
 });
 
-
-
-
 //scroll
 $(document).scroll(function(){
     var scrollHeight = $(document).scrollTop();
@@ -125,3 +139,14 @@ $(document).scroll(function(){
     else
         $('.site__header').removeClass('stuck','slow');
 });
+
+//inicialization of select picker
+$('.selectpicker').selectpicker();
+
+//on change function i need to control selected value
+$('select.selectpicker').on('change', function(){
+    var selected = $('.selectpicker option:selected').val();
+    $('.choose-deliver').hide();
+    $('.chosen').addClass('active');
+});
+
