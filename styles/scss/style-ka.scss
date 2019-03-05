@@ -1881,6 +1881,10 @@ $size: 120px;
                 object-fit: contain;
                 object-position: center;
               }
+              @media (max-width: 1199px) and (min-width: 576px){
+                width: 125px;
+                height: 125px;
+              }
             }
             .special-prod-title {
               @include font-style($primary-font, 14px, #3E3E3E);
@@ -2034,12 +2038,12 @@ $size: 120px;
           margin-right: 40px;
           .new-price {
             font-family: Roboto, sans-serif;
-            font-size: 28px;
+            font-size: 24px;
             color: $red;
           }
           .old-price {
-            font-family: Roboto, sans-serif;
-            font-size: 24px;
+            font-family: $primary-font;
+            font-size: 20px;
             color: #A8A8A8;
             text-decoration: line-through;
           }
@@ -2047,10 +2051,11 @@ $size: 120px;
         .item-qty {
           @include font-style($primary-font, 14px, #888888);
           display: block;
-          margin-top: 10px;
+          margin-top: 8px;
         }
       }
       .quantity {
+        width: 90px;
         margin-right: 5px;
         padding: 2px;
         border: 1px solid #F5F5F5;
@@ -2142,7 +2147,7 @@ $size: 120px;
         position: relative;
         @include font-style($bold-font, 28px, #3E3E3E);
         padding-left: 40px;
-        margin-top: 40px;
+        margin-top: 20px;
         &:before {
           content: '';
           position: absolute;
@@ -2167,6 +2172,7 @@ $size: 120px;
             display: block;
             position: relative;
             padding: 10px;
+            max-width: 218px;
             background-color: #FFF;
             @include border-top-right(20px);
             box-shadow: 0 3px 8px #f3f3f3;
@@ -2212,6 +2218,7 @@ $size: 120px;
             .special-prod-title {
               @include font-style($primary-font, 14px, #3E3E3E);
               height: 35px;
+              display: block;
               line-height: 18px;
               max-height: 40px;
               overflow: hidden;
@@ -2455,7 +2462,7 @@ $size: 120px;
       }
     }
     .view-all {
-      padding: 5px 15px;
+      padding: 6px 15px 5px;
       padding-top: 3px;
       border: 2px solid #D8D8D8;
       @include font-style($primary-font, 14px, #AAAAAA);
@@ -2498,6 +2505,10 @@ $size: 120px;
                 max-height: 100%;
                 object-fit: contain;
                 object-position: center;
+              }
+              @media (max-width: 1199px) and (min-width: 576px){
+                width: 125px;
+                height: 125px;
               }
             }
             .special-prod-title {
@@ -3597,6 +3608,10 @@ $size: 120px;
                   object-fit: contain;
                   object-position: center;
                 }
+                @media (max-width: 1199px) and (min-width: 576px){
+                  width: 125px;
+                  height: 125px;
+                }
               }
               .rating{
                 margin-bottom: 10px;
@@ -3618,7 +3633,7 @@ $size: 120px;
                 font-weight: bold;
               }
               .old-price{
-                font-family: Roboto,sans-serif;
+                font-family: $primary-font;
                 font-size: 15px;
                 color: #a8a8a8;
                 text-decoration: line-through;
@@ -3810,7 +3825,7 @@ $size: 120px;
                 font-weight: bold;
               }
               .old-price{
-                font-family: Roboto,sans-serif;
+                font-family: $primary-font;
                 font-size: 15px;
                 color: #a8a8a8;
                 text-decoration: line-through;
@@ -3927,7 +3942,7 @@ $size: 120px;
                 color: $red;
               }
               .old-price {
-                font-family: Roboto, sans-serif;
+                font-family: $primary-font;
                 font-size: 24px;
                 color: #A8A8A8;
                 text-decoration: line-through;
@@ -5513,7 +5528,7 @@ $size: 120px;
         margin-top: 20px;
       }
       .old-price{
-        font-family: Roboto, sans-serif;
+        font-family: $primary-font;
         font-size: 12px;
         color: #A8A8A8;
         text-decoration: line-through;
@@ -6661,6 +6676,7 @@ $size: 120px;
         background-size: 20px;
         background-position: center;
         @include border-radius(22px);
+        border: 1px solid #FFF;
         &:hover{
           opacity: 0.8;
         }
@@ -7145,4 +7161,34 @@ input[type=password]::-ms-reveal{
   position: absolute;
   right: 10px;
   top: 8px;
+}
+.old-price {
+  font-family: $primary-font!important;
+  font-size: 14px;
+  color: #A8A8A8;
+  text-decoration: line-through;
+}
+.ui-widget-content{
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,.2);
+  padding: 10px;
+  @include border-bottom-right(20px);
+  border: none;
+  .ui-menu-item{
+    @include font-style($primary-font,12px,#666);
+    padding: 10px 0;
+    border: none;
+    &:hover{
+      background-color: #f3f3f3;
+      color: #666;
+    }
+    .ui-menu-item-wrapper{
+      border: none;
+      padding: 5px 10px!important;
+      &:hover{
+        color: #666;
+        background-color: #f3f3f3;
+      }
+    }
+  }
 }
